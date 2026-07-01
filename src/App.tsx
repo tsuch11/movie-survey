@@ -49,8 +49,13 @@ function App() {
 
 	// ── Render ─────────────────────────────────────────────────────
 	return (
-		<main className="flex min-h-screen items-center justify-center bg-slate-100 p-6">
-			<div className="w-full max-w-md rounded-2xl bg-white shadow-md">
+		<main className="flex min-h-screen items-center justify-center bg-[#EAEFF5] p-6">
+			<div className="w-full max-w-md overflow-hidden rounded-2xl bg-white shadow-xl">
+				<header className="flex items-center gap-3 bg-[#B8926A] px-6 py-5">
+					<span className="flex h-9 w-9 items-center justify-center rounded-lg bg-white/15 text-lg">🎬</span>
+					<h1 className="text-lg font-bold text-white">Movie Survey</h1>
+				</header>
+
 				{isSubmitted ? (
 					<SurveyResult formData={formData} onRestart={handleRestart} />
 				) : (

@@ -14,8 +14,8 @@ type Props = {
 const Button = ({ label, onClick, type = 'button', variant = 'primary' }: Props) => {
 	const variantClasses =
 		variant === 'primary'
-			? 'bg-blue-600 text-white hover:bg-blue-700'
-			: 'bg-white text-gray-700 border border-gray-300 hover:bg-gray-50';
+			? 'bg-[#B8926A] text-white hover:opacity-90'
+			: 'bg-white text-gray-900 border border-[#B0B0B0]/40 hover:bg-[#EAEFF5]';
 
 	// ── Render ─────────────────────────────────────────────────────
 	return (
