@@ -39,7 +39,7 @@ const SurveyForm = ({
 
 	// ── Render ─────────────────────────────────────────────────────
 	return (
-		<form onSubmit={handleSubmit} className="flex flex-col gap-6 p-6">
+		<form onSubmit={handleSubmit} noValidate className="flex flex-col gap-6 p-6">
 			<TextField
 				label="ชื่อ"
 				name="name"
