@@ -27,7 +27,7 @@ const TextField = ({
 	error,
 	multiline,
 }: Props) => {
-	const fieldClasses = `w-full rounded-lg border px-4 py-2 text-sm text-gray-900 transition-colors duration-150 focus:outline-none focus:ring-2 focus:ring-blue-500 ${error ? 'border-red-400' : 'border-gray-300'}`;
+	const fieldClasses = `w-full rounded-lg border px-4 py-2 text-sm text-gray-900 transition-colors duration-150 focus:outline-none focus:ring-2 focus:ring-[#B8926A] ${error ? 'border-red-400' : 'border-[#B0B0B0]/40'}`;
 
 	// ── Handlers ───────────────────────────────────────────────────
 	const handleChange = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) =>
@@ -36,7 +36,7 @@ const TextField = ({
 	// ── Render ─────────────────────────────────────────────────────
 	return (
 		<div className="flex flex-col gap-1">
-			<label htmlFor={name} className="text-sm font-medium text-gray-700">
+			<label htmlFor={name} className="text-sm font-medium text-gray-900">
 				{label}
 				{required ? <span className="text-red-500"> *</span> : null}
 			</label>
